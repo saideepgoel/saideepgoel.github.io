@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Prep Tools | Saideep Goel</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+
+            /* Keep this one for Chrome/Safari compatibility */
+            -webkit-background-clip: text;
+
+            /* Add this Standard version to fix the warning */
+            background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: var(--accent);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: var(--accent);
+            color: #0f172a;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>JEE Prep Dashboard</h1>
+        <p class="subtitle">Essential tools for productivity and tracking</p>
+    </header>
+
+    <main class="grid-container">
+
+        <article class="card">
+            <div>
+                <span class="tag">Task Management</span>
+                <h2>PCM TodoList</h2>
+                <p>A focused todo list manager designed specifically for tracking Physics, Chemistry, and Math tasks and
+                    backlogs.</p>
+            </div>
+            <a href="https://saideepgoel.github.io/todolist/" class="btn" target="_blank">Open TodoList</a>
+        </article>
+
+        <article class="card">
+            <div>
+                <span class="tag">Productivity</span>
+                <h2>ClockTab</h2>
+                <p>A minimal clock tab to keep track of time during study sessions without distractions.</p>
+            </div>
+            <a href="https://saideepgoel.github.io/clock/" class="btn" target="_blank">Open ClockTab</a>
+        </article>
+
+        <article class="card">
+            <div>
+                <span class="tag">Syllabus Guide</span>
+                <h2>11th to 12th Guide</h2>
+                <p>A comprehensive guide on 11th-grade chapters required before starting 12th-grade JEE preparation.</p>
+            </div>
+            <a href="https://saideepgoel.github.io/prerequisiteforJEE/" class="btn" target="_blank">Check
+                Prerequisites</a>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Built by Saideep Goel | Hosted on <a href="https://github.com/saideepgoel" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+
+</html>
